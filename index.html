@@ -65,6 +65,7 @@
             <!-- Navegación Desktop -->
             <nav class="hidden md:flex gap-8 font-['Inter'] text-sm uppercase font-semibold tracking-widest text-[#000000]">
                 <a href="#planes" class="hover:text-[#898989]">Planes</a>
+                <a href="#ejemplos" class="hover:text-[#898989]">Ejemplos</a>
                 <a href="#servicios" class="hover:text-[#898989]">Servicios</a>
                 <a href="#contacto" class="hover:text-[#636d52]">Contacto</a>
             </nav>
@@ -80,6 +81,7 @@
         <!-- Navegación Mobile (Oculta por defecto) -->
         <nav id="mobile-menu" class="hidden flex-col border-t border-[#000000] bg-[#f5f5f4] font-['Inter'] text-sm uppercase font-semibold tracking-widest">
             <a href="#planes" class="p-4 border-b border-[#000000] text-center hover:bg-[#dfdfdf]">Planes</a>
+            <a href="#ejemplos" class="p-4 border-b border-[#000000] text-center hover:bg-[#dfdfdf]">Ejemplos</a>
             <a href="#servicios" class="p-4 border-b border-[#000000] text-center hover:bg-[#dfdfdf]">Servicios</a>
             <a href="#contacto" class="p-4 text-center hover:bg-[#dfdfdf] hover:bg-[#dfdfdf]">Contacto</a>
         </nav>
@@ -153,8 +155,11 @@
                     </ul>
                 </article>
 
-                <article class="p-8 md:p-10 flex flex-col h-full bg-[#f5f5f4]">
-                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">PLAN 02</div>
+                <article class="p-8 md:p-10 flex flex-col h-full bg-[#dfdfdf]">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">PLAN 02</div>
+                        <div class="bg-[#3D4233] text-[#dfdfdf] font-['Inter'] text-xs uppercase tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">MÁS ELEGIDO</div>
+                    </div>
                     <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-3 text-[#000000]">Plan Creador</h3>
                     <p class="font-['Inter'] text-sm text-[#3B3B3B] border-t border-[#000000] pt-4 mb-6">
                         Para canales de YouTube y marcas en crecimiento.
@@ -181,6 +186,43 @@
                         <li>- Optimización SEO en YouTube</li>
                         <li>- Soporte prioritario 24/7</li>
                     </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- VIDEOS -->
+        <section id="ejemplos" class="border-b border-[#000000] bg-[#f5f5f4]">
+            <div class="p-6 md:p-12 border-b border-[#000000] flex flex-col md:flex-row md:justify-between md:items-end gap-4 bg-[#dfdfdf]">
+                <div>
+                    <h2 class="font-['Archivo_Black'] text-4xl md:text-5xl uppercase tracking-tight text-[#000000]">Trabajos</h2>
+                </div>
+                <span class="hidden md:inline-block font-['Inter'] text-xs text-[#000000] uppercase tracking-widest">// Videos</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 grid-border-1px border-t-0 border-l-0 border-r-0">
+                <article class="p-6 md:p-8 flex flex-col bg-[#f5f5f4]">
+                    <div class="border border-[#000000] bg-[#373737] aspect-video overflow-hidden">
+                        <video class="w-full h-full object-cover" controls preload="metadata">
+                            <source src="video-pastor.mp4" type="video/mp4">
+                            Tu navegador no soporta video HTML5.
+                        </video>
+                    </div>
+                </article>
+
+                <article class="p-6 md:p-8 flex flex-col bg-[#f5f5f4]">
+                    <div class="border border-[#000000] bg-[#373737] aspect-video flex items-center justify-center p-6">
+                        <div class="text-center">
+                            <span class="inline-block bg-[#000000] text-[#dfdfdf] font-['Inter'] text-[10px] uppercase tracking-[0.18em] px-3 py-1 border border-[#000000]">Próximamente</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-6 md:p-8 flex flex-col bg-[#f5f5f4]">
+                    <div class="border border-[#000000] bg-[#373737] aspect-video flex items-center justify-center p-6">
+                        <div class="text-center">
+                            <span class="inline-block bg-[#000000] text-[#dfdfdf] font-['Inter'] text-[10px] uppercase tracking-[0.18em] px-3 py-1 border border-[#000000]">Próximamente</span>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
@@ -218,10 +260,44 @@
                     <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">SECTOR 03</div>
                     <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-4 text-[#000000]">Creadores</h3>
                     <p class="font-['Inter'] text-[#000000] text-sm leading-relaxed border-t border-[#000000] pt-4 mt-auto">
-                        Montaje enfocado en retención de audiencia para YouTube, TikTok e IG Reels. Ritmo acelerado, diseño sonoro inmersivo y motion graphics integrados. Elevación estética de la marca personal.
+                        Montaje enfocado en retención de audiencia para YouTube, TikTok e Instagram (IG) Reels. Ritmo acelerado, diseño sonoro inmersivo y motion graphics integrados. Elevación estética de la marca personal.
                     </p>
                 </article>
 
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="border-b border-[#000000] bg-[#f5f5f4]">
+            <div class="p-6 md:p-12 border-b border-[#000000] flex justify-between items-end bg-[#dfdfdf]">
+                <h2 class="font-['Archivo_Black'] text-4xl md:text-5xl uppercase tracking-tight text-[#000000]">Sobre mí</h2>
+                <span class="hidden md:inline-block font-['Inter'] text-xs text-[#000000] uppercase tracking-widest">// Leonardo Bringas</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 grid-border-1px border-t-0 border-l-0 border-r-0">
+                <article class="p-8 md:p-12 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="mb-6">
+                        <img src="leo.jpeg" alt="Leonardo Bringas" class="w-40 h-40 rounded-full object-cover border border-[#000000]">
+                    </div>
+                    <p class="font-['Inter'] text-[#000000] text-base leading-relaxed">
+                        Soy <strong>Leonardo Bringas</strong>, fundador de <strong>leobringas.video</strong>. Trabajo con creadores, emprendedores y negocios locales para convertir ideas en videos claros, dinámicos y con intención.
+                    </p>
+                    <p class="font-['Inter'] text-[#000000] text-base leading-relaxed mt-5">
+                        Mi estilo es detallista: hago cortes precisos, cuido que los subtítulos sean legibles y detecto bien los momentos que realmente sostienen la atención.
+                    </p>
+                </article>
+
+                <article class="p-8 md:p-12 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">Trayectoria</div>
+                    <ul class="font-['Inter'] text-[#000000] text-sm leading-relaxed space-y-3">
+                        <li>- Más de 1 año editando para proyectos con enfoque de crecimiento.</li>
+                        <li>- 8 años en el área de multimedia de Iglesia Restauración.</li>
+                        <li>- En el canal de la iglesia hubo crecimiento notable en vistas, retención, comentarios y suscriptores.</li>
+                    </ul>
+                    <a href="#contacto" class="inline-block mt-8 bg-[#3D4233] text-[#FFFFFF] font-['Archivo_Black'] text-sm uppercase px-6 py-4 border border-[#000000] hover:bg-[#000000] transition-colors w-max tracking-wide">
+                        Hablemos de tu proyecto
+                    </a>
+                </article>
             </div>
         </section>
 
@@ -243,6 +319,9 @@
                             Instagram
                         </a>
                     </div>
+                    <p class="font-['Inter'] text-xs text-[#dfdfdf]/70 mt-4 uppercase tracking-widest">
+                        Respuesta en menos de 24 horas hábiles.
+                    </p>
                 </div>
 
                 <!-- Contacto Directo -->
