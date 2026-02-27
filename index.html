@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edición de Video High-End | Profesional</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *, *::before, *::after {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+        
+        body {
+            background-color: #f5f5f4;
+            color: #000000;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: #3D4332;
+            color: #f5f5f4;
+        }
+
+        ::-moz-selection {
+            background-color: #3D4332;
+            color: #f5f5f4;
+        }
+
+        .grid-border-1px {
+            gap: 1px;
+            background-color: #000000;
+            border: 1px solid #000000;
+        }
+        
+        .grid-border-1px > * {
+            background-color: #f5f5f4;
+        }
+
+        .tech-img {
+            filter: grayscale(100%) contrast(1.2);
+            transition: filter 0.5s ease;
+        }
+        .tech-img:hover {
+            filter: grayscale(0%) contrast(1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-[#f5f5f4] border-b border-[#000000]">
+        <div class="flex justify-between items-center px-6 py-4 md:px-12 md:py-6">
+            <!-- Logo -->
+            <a href="#" class="font-['Archivo_Black'] text-2xl tracking-tighter uppercase text-[#000000]">
+                leobringas<span class="text-[#898989]">.</span>video
+            </a>
+
+            <!-- Navegación Desktop -->
+            <nav class="hidden md:flex gap-8 font-['Inter'] text-sm uppercase font-semibold tracking-widest text-[#000000]">
+                <a href="#planes" class="hover:text-[#898989]">Planes</a>
+                <a href="#servicios" class="hover:text-[#898989]">Servicios</a>
+                <a href="#contacto" class="hover:text-[#636d52]">Contacto</a>
+            </nav>
+
+            <!-- Menú Mobile Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden block p-2 border border-[#000000] bg-[#dfdfdf] text-[#000000]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="square" stroke-linejoin="miter" d="M3 12h18M3 6h18M3 18h18" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Navegación Mobile (Oculta por defecto) -->
+        <nav id="mobile-menu" class="hidden flex-col border-t border-[#000000] bg-[#f5f5f4] font-['Inter'] text-sm uppercase font-semibold tracking-widest">
+            <a href="#planes" class="p-4 border-b border-[#000000] text-center hover:bg-[#dfdfdf]">Planes</a>
+            <a href="#servicios" class="p-4 border-b border-[#000000] text-center hover:bg-[#dfdfdf]">Servicios</a>
+            <a href="#contacto" class="p-4 text-center hover:bg-[#dfdfdf] hover:bg-[#dfdfdf]">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="grid grid-cols-1 md:grid-cols-2 min-h-[90vh] border-b border-[#000000]">
+            <!-- Izquierda: Copy y CTA -->
+            <div class="p-8 md:p-16 flex flex-col justify-center border-b md:border-b-0 md:border-r border-[#000000] relative bg-[#f5f5f4]">
+                <div class="absolute top-8 left-8 text-[#898989] text-xs uppercase tracking-[0.2em] font-medium">
+                    // Sistema de Montaje 01
+                </div>
+                
+                <h1 class="font-['Archivo_Black'] text-6xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight uppercase mt-12 mb-8 text-[#000000]">
+                    Edición<br>de Video<br>de Alto<br>Nivel
+                </h1>
+                
+                <p class="font-['Inter'] text-[#3B3B3B] text-base md:text-lg mb-12 max-w-md font-light leading-relaxed">
+                    Postproducción técnica y estética narrativa. Soluciones audiovisuales quirúrgicas para marcas, corporaciones y creadores de élite.
+                </p>
+                
+                <a href="#contacto" class="inline-block bg-[#3D4332] text-[#FFFFFF] font-['Archivo_Black'] text-lg px-8 py-5 border border-[#000000] hover:bg-[#000000] hover:text-[#f5f5f4] w-max uppercase tracking-wide">
+                    Iniciar Proyecto
+                </a>
+            </div>
+
+            <!-- Derecha: Foto de perfil / Marco -->
+            <div class="p-8 md:p-16 flex items-center justify-center bg-[#dfdfdf] relative">
+                <!-- Marco fotográfico rígido -->
+                <div class="border border-[#000000] w-full max-w-md aspect-[4/5] relative bg-[#f5f5f4] overflow-hidden p-2">
+                    <div class="border border-[#000000] w-full h-full relative overflow-hidden">
+                        <!-- Imagen de perfil placeholder -->
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Setup de edición profesional" 
+                             class="tech-img w-full h-full object-cover object-center absolute inset-0"
+                             onerror="this.src='https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?q=80&w=1000&auto=format&fit=crop'">
+                    </div>
+                </div>
+                <div class="absolute bottom-8 right-8 text-[#000000] text-xs font-['Inter'] uppercase tracking-[0.2em] font-medium rotate-90 origin-bottom-right">
+                    V. 2.0.4 - Activo
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANES -->
+        <section id="planes" class="border-b border-[#000000] bg-[#f5f5f4]">
+            <div class="p-6 md:p-12 border-b border-[#000000] flex flex-col md:flex-row md:justify-between md:items-end gap-4">
+                <div>
+                    <h2 class="font-['Archivo_Black'] text-4xl md:text-5xl uppercase tracking-tight text-[#000000]">Planes</h2>
+                    <p class="font-['Inter'] text-sm text-[#3B3B3B] mt-3 max-w-2xl">
+                        Soluciones de edición escalables diseñadas para potenciar tu contenido, desde lo esencial hasta una gestión completa.
+                    </p>
+                </div>
+                <span class="hidden md:inline-block font-['Inter'] text-xs text-[#898989] uppercase tracking-widest">// Escalable</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 grid-border-1px border-t-0 border-l-0 border-r-0">
+                <article class="p-8 md:p-10 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">PLAN 01</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-3 text-[#000000]">Plan Esencial</h3>
+                    <p class="font-['Inter'] text-sm text-[#3B3B3B] border-t border-[#000000] pt-4 mb-6">
+                        Ideal para iniciar con contenido corto y reels.
+                    </p>
+                    <ul class="font-['Inter'] text-sm text-[#000000] leading-relaxed space-y-2 mt-auto">
+                        <li>- Edición básica y recortes</li>
+                        <li>- Subtítulos dinámicos</li>
+                        <li>- Música sin copyright</li>
+                        <li>- Formato vertical (9:16)</li>
+                        <li>- Hasta 3 revisiones</li>
+                    </ul>
+                </article>
+
+                <article class="p-8 md:p-10 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">PLAN 02</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-3 text-[#000000]">Plan Creador</h3>
+                    <p class="font-['Inter'] text-sm text-[#3B3B3B] border-t border-[#000000] pt-4 mb-6">
+                        Para canales de YouTube y marcas en crecimiento.
+                    </p>
+                    <ul class="font-['Inter'] text-sm text-[#000000] leading-relaxed space-y-2 mt-auto">
+                        <li>- Edición avanzada y transiciones</li>
+                        <li>- Color grading profesional</li>
+                        <li>- Motion graphics básicos</li>
+                        <li>- Efectos de sonido (SFX)</li>
+                        <li>- Revisiones ilimitadas</li>
+                    </ul>
+                </article>
+
+                <article class="p-8 md:p-10 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">PLAN 03</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-3 text-[#000000]">Plan Premium</h3>
+                    <p class="font-['Inter'] text-sm text-[#3B3B3B] border-t border-[#000000] pt-4 mb-6">
+                        Gestión integral, estrategia y máxima retención.
+                    </p>
+                    <ul class="font-['Inter'] text-sm text-[#000000] leading-relaxed space-y-2 mt-auto">
+                        <li>- Todo lo del Plan Creador</li>
+                        <li>- Creación de guiones</li>
+                        <li>- Diseño de miniaturas</li>
+                        <li>- Optimización SEO en YouTube</li>
+                        <li>- Soporte prioritario 24/7</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICIOS / ESPECIALIDADES -->
+        <section id="servicios" class="border-b border-[#000000] bg-[#f5f5f4]">
+            <div class="p-6 md:p-12 border-b border-[#000000] flex justify-between items-end bg-[#dfdfdf]">
+                <h2 class="font-['Archivo_Black'] text-4xl md:text-5xl uppercase tracking-tight text-[#000000]">Áreas de Operación</h2>
+                <span class="hidden md:inline-block font-['Inter'] text-xs text-[#000000] uppercase tracking-widest">// Segmentación</span>
+            </div>
+
+            <!-- Estructura de 3 columnas limpias -->
+            <div class="grid grid-cols-1 md:grid-cols-3 grid-border-1px border-t-0 border-l-0 border-r-0">
+                
+                <!-- Columna 1: Empresas -->
+                <article class="p-8 md:p-12 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">SECTOR 01</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-4 text-[#000000]">Corporaciones</h3>
+                    <p class="font-['Inter'] text-[#000000] text-sm leading-relaxed border-t border-[#000000] pt-4 mt-auto">
+                        Edición institucional de alta fidelidad. Comunicaciones internas, memorias anuales y publicidad corporativa con estricto apego a manuales de marca. Flujos de trabajo estandarizados y entregas puntuales.
+                    </p>
+                </article>
+
+                <!-- Columna 2: Pymes -->
+                <article class="p-8 md:p-12 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">SECTOR 02</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-4 text-[#000000]">Pymes / Startups</h3>
+                    <p class="font-['Inter'] text-[#000000] text-sm leading-relaxed border-t border-[#000000] pt-4 mt-auto">
+                        Videos dinámicos diseñados para conversión. Comerciales para redes sociales, demostraciones de producto y casos de éxito. Maximización de presupuesto con resultados de calidad superior.
+                    </p>
+                </article>
+
+                <!-- Columna 3: Creadores -->
+                <article class="p-8 md:p-12 flex flex-col h-full bg-[#f5f5f4]">
+                    <div class="bg-[#000000] text-[#dfdfdf] font-['Inter'] text-xs uppercase mb-6 tracking-widest border border-[#000000] px-3 py-1 w-max font-bold">SECTOR 03</div>
+                    <h3 class="font-['Archivo_Black'] text-3xl uppercase mb-4 text-[#000000]">Creadores</h3>
+                    <p class="font-['Inter'] text-[#000000] text-sm leading-relaxed border-t border-[#000000] pt-4 mt-auto">
+                        Montaje enfocado en retención de audiencia para YouTube, TikTok e IG Reels. Ritmo acelerado, diseño sonoro inmersivo y motion graphics integrados. Elevación estética de la marca personal.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="bg-[#303030] text-[#dfdfdf]">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <!-- Info y Texto -->
+                <div class="p-8 md:p-16 border-b md:border-b-0 md:border-r border-[#898989]/30 flex flex-col justify-center">
+                    <h2 class="font-['Archivo_Black'] text-5xl md:text-6xl lg:text-7xl uppercase mb-6 leading-none">Iniciar<br>Sistema</h2>
+                    <p class="font-['Inter'] text-[#E6E6E6]/70 text-base mb-10 max-w-sm font-light">
+                        Protocolo de contacto abierto. Completa el formulario o utiliza los canales directos para solicitar una evaluación de tu proyecto.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mt-auto">
+                        <a href="mailto:leonardoisaiasbringas34@gmail.com" class="font-['Inter'] text-xs uppercase tracking-widest border border-[#dfdfdf]/50 px-6 py-3 hover:bg-[#E6E6E6] hover:text-[#303030]">
+                            Email Directo
+                        </a>
+                        <a href="https://www.instagram.com/leobringasatlife/" class="font-['Inter'] text-xs uppercase tracking-widest border border-[#636d52] bg-[#3D4233] text-[#FFFFFF] px-6 py-3 hover:bg-transparent font-bold">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contacto Directo -->
+                <div class="p-8 md:p-16 flex flex-col justify-center bg-[#373737]">
+                    <div class="w-full max-w-md mx-auto border border-[#dfdfdf]/30 p-6 md:p-8">
+                        <h3 class="font-['Archivo_Black'] text-2xl uppercase text-[#dfdfdf] mb-4">Ruta de Trabajo</h3>
+                        <p class="font-['Inter'] text-sm text-[#dfdfdf]/70 mb-6">
+                            Sin formularios. Envíame un mensaje directo y arrancamos con tu proyecto.
+                        </p>
+                        <ol class="font-['Inter'] text-sm text-[#dfdfdf] space-y-3">
+                            <li>1. Me cuentas tu objetivo y formato.</li>
+                            <li>2. Te propongo plan, tiempos y alcance.</li>
+                            <li>3. Empezamos edición y revisiones.</li>
+                        </ol>
+                    </div>
+                    <a href="https://wa.link/3qeol7" class="w-full max-w-md mx-auto mt-6 text-center bg-[#dfdfdf] text-[#373737] font-['Archivo_Black'] text-lg uppercase p-5 border border-[#dfdfdf] hover:bg-transparent hover:text-[#dfdfdf]">
+                        Escribir por WhatsApp
+                    </a>
+                    <p class="w-fit self-center mx-auto mt-4 mb-0 text-center font-['Inter'] text-xs uppercase tracking-widest text-[#dfdfdf]/70">o por Instagram DM</p>
+                    <a href="https://www.instagram.com/leobringasatlife/" class="w-full max-w-md mx-auto mt-6 text-center bg-[#dfdfdf] text-[#373737] font-['Archivo_Black'] text-lg uppercase p-5 border border-[#dfdfdf] hover:bg-transparent hover:text-[#dfdfdf]">
+                        Escribir por Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#373737] border-t border-[#898989]/30 text-[#dfdfdf]/50 p-6 flex flex-col md:flex-row justify-between items-center gap-4 font-['Inter'] text-xs uppercase tracking-widest">
+        <div>&copy; 2026 LEOBRINGAS.VIDEO // NO DERECHOS DE AUTOR.</div>
+        <div class="flex gap-6">
+            <a href="https://www.instagram.com/leobringasatlife/" class="hover:text-[#dfdfdf]">Instagram</a>
+            <a href="https://wa.link/3qeol7" class="hover:text-[#dfdfdf]">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                    document.getElementById('mobile-menu').classList.remove('flex');
+                }
+            });
+        });
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>
